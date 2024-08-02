@@ -8,6 +8,7 @@
 :root {
   --initial-color-mode: dark;
   --transition-duration: 0.3s;
+  --fontColor: linear-gradient(to right, #BC3CD8 0%, #C54B8C 100%);
 }
 
 [data-theme='dark'] {
@@ -30,4 +31,11 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   @apply font-sans;
+}
+
+/* Classe personalizada para aplicar o gradiente ao texto */
+.text-gradient {
+  background: var(--fontColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
