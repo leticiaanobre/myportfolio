@@ -8,7 +8,7 @@ export default function ThemeToggleButton() {
     return (
       <button
         onClick={toggleColorMode}
-        className={`p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 transition duration-300 bg-transparent ${
+        className={`p-2 rounded-full transition duration-300 bg-transparent ${
           colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
         }`}
       >
