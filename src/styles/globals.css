@@ -33,7 +33,6 @@ body {
   @apply font-sans;
 }
 
-/* Classe personalizada para aplicar o gradiente ao texto */
 .text-gradient {
   background: var(--fontColor);
   -webkit-background-clip: text;
