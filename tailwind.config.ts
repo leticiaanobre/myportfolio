@@ -16,6 +16,13 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        customPurple: {
+          DEFAULT: '#BC3CD8',
+          dark: '#8A2AB9',  // Um tom mais escuro, opcional
+          light: '#D8A4E5',  // Um tom mais claro, opcional
+        },
+      },
     },
   },
   plugins: [],
