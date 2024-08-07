@@ -1,3 +1,4 @@
+import ButtonComponent from '@/components/Button';
 import { ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 
@@ -24,7 +25,7 @@ export default function Projects() {
             <strong>adipiscing elit. Ultrices lorem non feugiat egestas amet.</strong>
           </p>
           <p className="font-extralight">Website Design</p>
-          <button className="flex flex-row text-sm items-center border py-1 px-6 rounded-full">VIEW WORK <ChevronRight className="ml-2"/></button>
+          <ButtonComponent text="VIEW WORK" icon={ChevronRight} />
         </div>
       </div>
       <div className="flex flex-row gap-14 mt-8">
@@ -35,7 +36,7 @@ export default function Projects() {
             <strong>adipiscing elit. Ultrices lorem non feugiat egestas amet.</strong>
           </p>
           <p className="font-extralight">Website Design</p>
-          <button className="flex flex-row text-sm items-center border py-1 px-6 rounded-full">VIEW WORK <ChevronRight className="ml-2"/></button>
+          <ButtonComponent text="VIEW WORK" icon={ChevronRight} />
         </div>
         <div className="relative w-[700px] h-[350px]">
           <Image
@@ -64,7 +65,7 @@ export default function Projects() {
             <strong>adipiscing elit. Ultrices lorem non feugiat egestas amet.</strong>
           </p>
           <p className="font-extralight">Website Design</p>
-          <button className="flex flex-row text-sm items-center border py-1 px-6 rounded-full">VIEW WORK <ChevronRight className="ml-2"/></button>
+          <ButtonComponent text="VIEW WORK" icon={ChevronRight} />
         </div>
       </div>
     </section>

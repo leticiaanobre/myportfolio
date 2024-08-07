@@ -15,12 +15,14 @@
   --color-mode: dark;
   --bg-color: #121212;
   --text-color: #EDF2F7;
+  --color-border: #D0D5DD;
 }
 
 [data-theme='light'] {
   --color-mode: light;
   --bg-color: #EDF2F7;
   --text-color: #1F1F1F;
+  --color-border: #9b9b9b;
 }
 
 html {
@@ -37,4 +39,8 @@ body {
   background: var(--fontColor);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.border-color {
+  border-color: var(--color-border);
 }
