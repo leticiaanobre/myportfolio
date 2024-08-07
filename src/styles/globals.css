@@ -14,13 +14,13 @@
 [data-theme='dark'] {
   --color-mode: dark;
   --bg-color: #121212;
-  --text-color: #ffffff;
+  --text-color: #EDF2F7;
 }
 
 [data-theme='light'] {
   --color-mode: light;
-  --bg-color: #ffffff;
-  --text-color: #000000;
+  --bg-color: #EDF2F7;
+  --text-color: #1F1F1F;
 }
 
 html {
