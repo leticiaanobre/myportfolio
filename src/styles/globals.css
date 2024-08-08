@@ -44,3 +44,11 @@ body {
 .border-color {
   border-color: var(--color-border);
 }
+
+.bg-color {
+  background: var(--bg-color);
+}
+
+.text-color {
+  color: var(--text-color);
+}
