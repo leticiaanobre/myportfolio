@@ -13,7 +13,7 @@
 
 [data-theme='dark'] {
   --color-mode: dark;
-  --bg-color: linear-gradient(to bottom, #121212 0%, #190043 100%);
+  --bg-color: linear-gradient(to bottom, #010208 0%, #190043 100%);
   --text-color: #EDF2F7;
   --color-border: #D0D5DD;
 }
