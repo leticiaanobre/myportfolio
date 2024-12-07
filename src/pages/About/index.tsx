@@ -1,6 +1,6 @@
 export default function About() {
     return (
-      <section className="w-full min-h-screen flex flex-col">
+      <section className="w-full min-h-screen flex flex-col" id="about">
         <div className="flex-grow flex flex-col md:flex-row gap-4 items-center justify-center p-10">
           {/* Texto */}
           <div className="w-full md:w-2/5 flex flex-col gap-4">

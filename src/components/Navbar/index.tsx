@@ -25,33 +25,34 @@ export default function Navbar() {
           </button>
         </div>
         <div className="hidden md:flex items-center gap-4">
-          <button className={`py-2 px-3 rounded-xl transition duration-300 ${
-          colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
-        }`}>Home</button>
-          <button className={`py-2 px-3 rounded-xl transition duration-300 ${
-          colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
-        }`}>About</button>
-          <button className={`py-2 px-3 rounded-xl transition duration-300 ${
-          colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
-        }`}>Projects</button>
+          <a href="#home" className={`py-2 px-3 rounded-xl transition duration-300 ${
+            colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
+          }`}>Home</a>
+          <a href="#about" className={`py-2 px-3 rounded-xl transition duration-300 ${
+            colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
+          }`}>About</a>
+          <a href="#projects" className={`py-2 px-3 rounded-xl transition duration-300 ${
+            colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
+          }`}>Projects</a>
         </div>
 
-      {isMenuOpen && (
-        <div className="absolute top-16 left-0 w-full bg-background bg-color shadow-lg md:hidden">
-          <div className="flex flex-col items-center py-4">
-            <button className={`py-3 w-full ${
-          colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
-        }`}>Home</button>
-            <button className={`py-3 w-full ${
-          colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
-        }`}>About</button>
-            <button className={`py-3 w-full ${
-          colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
-        }`}>Projects</button>
+        {isMenuOpen && (
+          <div className="absolute top-16 left-0 w-full bg-background bg-color shadow-lg md:hidden">
+            <div className="flex flex-col items-center py-4">
+              <a href="#home" className={`py-3 w-full ${
+                colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
+              }`}>Home</a>
+              <a href="#about" className={`py-3 w-full ${
+                colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
+              }`}>About</a>
+              <a href="#projects" className={`py-3 w-full ${
+                colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
+              }`}>Projects</a>
+            </div>
           </div>
-        </div>
-      )}
+        )}
       </div>
     </header>
   );
 }
+

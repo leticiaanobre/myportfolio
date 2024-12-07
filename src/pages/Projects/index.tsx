@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Projects() {
   return (
-    <section className="w-full min-h-screen px-6 md:px-24 py-16 gap-10 flex flex-col">
+    <section className="w-full min-h-screen px-6 md:px-24 py-16 gap-10 flex flex-col" id="projects">
       <p className="font-extralight text-2xl text-center md:text-left">
         Selected <strong>Projects</strong>
       </p>
