@@ -13,14 +13,14 @@
 
 [data-theme='dark'] {
   --color-mode: dark;
-  --bg-color: #121212;
+  --bg-color: linear-gradient(to bottom, #121212 0%, #190043 100%);
   --text-color: #EDF2F7;
   --color-border: #D0D5DD;
 }
 
 [data-theme='light'] {
   --color-mode: light;
-  --bg-color: #EDF2F7;
+  --bg-color: linear-gradient(to bottom, #EDF2F7 0%, #D2B8FF 100%);
   --text-color: #1F1F1F;
   --color-border: #9b9b9b;
 }
@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  background-color: var(--bg-color);
+  background: var(--bg-color); /* Aplica o gradiente de fundo */
   color: var(--text-color);
   @apply font-sans;
 }
