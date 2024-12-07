@@ -32,7 +32,7 @@ export default function Projects() {
             The application integrates communication with a generative AI for legal data analysis.
           </p>
           <p className="font-extralight">Website Design</p>
-          <ButtonComponent text="VIEW WORK" icon={ChevronRight} />
+          <ButtonComponent text="VIEW WORK" icon={ChevronRight} link="https://mftiago.com.br/" />
         </div>
       </div>
       
