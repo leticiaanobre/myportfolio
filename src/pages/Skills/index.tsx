@@ -35,7 +35,7 @@ function SkillCard({ icon, title }: { icon: React.ReactNode; title: string }) {
   return (
     <div className="flex flex-col items-center">
       <div className="text-4xl md:text-5xl text-gradient mb-4">{icon}</div>
-      <p className="text-lg md:text-xl font-semibold text-center">{title}</p>
+      <p className="text-lg md:text-xl font-light text-center">{title}</p>
     </div>
   );
 }
