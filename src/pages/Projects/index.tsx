@@ -38,23 +38,22 @@ export default function Projects() {
       
       {/* Project 2 */}
       <div className="flex flex-col md:flex-row-reverse gap-6 md:gap-14 mt-8 items-center md:items-start">
-        <div className="relative w-full h-60 md:w-[700px] md:h-[350px]">
+        <div className="relative w-full h-60 md:w-[900px] md:h-[350px]">
           <Image
-            src="/assets/Project1.svg"
+            src="/Nutrilife.jpg"
             alt="Project two"
             layout="fill"
             objectFit="cover"
             className="rounded-lg"
           />
         </div>
-        <div className="flex flex-col gap-4 justify-end items-center md:items-start text-center md:text-left">
-          <h1 className="text-1xl font-bold text-gradient">REAL ESTATE TEMPLATE</h1>
+        <div className="flex flex-col gap-4 justify-end items-center md:items-start text-center  md:text-left md:max-w-xl">
+          <h1 className="text-1xl font-bold text-gradient">NUTRILIFE</h1>
           <p className="font-extralight text-base md:text-2xl leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur{' '}
-            <strong>adipiscing elit. Ultrices lorem non feugiat egestas amet.</strong>
+          Nutrilife is an informational app designed to assist beginners in adopting a more active and healthy lifestyle. It was developed using <strong>React Native</strong>, <strong>Expo CLI</strong>, and <strong>JavaScript</strong> for the front-end. <strong>Firebase</strong> was used for authentication and data flow on the back-end.
           </p>
           <p className="font-extralight">Website Design</p>
-          <ButtonComponent text="VIEW WORK" icon={ChevronRight} />
+          <ButtonComponent text="VIEW WORK" icon={ChevronRight} link="https://github.com/leticiaanobre/nutriLife-front-mobile"/>
         </div>
       </div>
       
