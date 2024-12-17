@@ -28,7 +28,7 @@ export default function Projects() {
           <p className="font-extralight text-base md:text-2xl leading-relaxed">
             For the design, <strong>Figma</strong> was used. As for the front-end, I utilized
             <strong> Next.js</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS </strong> 
-            to speed up the landing page's development with functional and intuitive interfaces.{' '}
+            to speed up the landing page&apos;s development with functional and intuitive interfaces.{' '}
             The application integrates communication with a generative AI for legal data analysis.
           </p>
           <p className="font-extralight">Website Design</p>
