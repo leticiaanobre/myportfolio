@@ -8,7 +8,7 @@ export default function Initial() {
       <Navbar />
       <div className="flex-grow flex flex-col gap-4 items-center justify-evenly p-10">
         {/* Image Section */}
-        <div className="relative flex items-center justify-center">
+        <div className=" flex items-center justify-center">
           <div className="w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 rounded-full overflow-hidden">
             <Image
               src="/LETICIADARK1.jpg" 

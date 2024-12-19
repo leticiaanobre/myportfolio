@@ -42,16 +42,16 @@ export default function Navbar() {
         {isMenuOpen && (
           <div className="absolute top-16 left-0 w-full bg-background bg-color shadow-lg md:hidden">
             <div className="flex flex-col items-center py-4">
-              <a href="#home" className={`py-3 w-full ${
+              <a href="#home" className={`py-3 w-full text-center ${
                 colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
               }`}>Home</a>
-              <a href="#about" className={`py-3 w-full ${
+              <a href="#about" className={`py-3 w-full text-center ${
                 colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
               }`}>About</a>
-              <a href="#skills" className={`py-3 w-full ${
+              <a href="#skills" className={`py-3 w-full text-center ${
                 colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
               }`}>Skills</a>
-              <a href="#projects" className={`py-3 w-full ${
+              <a href="#projects" className={`py-3 w-full text-center ${
                 colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
               }`}>Projects</a>
             </div>
