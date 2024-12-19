@@ -10,9 +10,12 @@ export default function Initial() {
             <p className='text-center font-extralight text-2xl md:text-4xl leading-relaxed'>I&apos;m a Frontend Developer specialising in</p>
             <p className='text-center font-extralight text-2xl md:text-4xl leading-relaxed'><strong>UX/UI</strong> and <strong>Interaction Design</strong></p>
         </div>
-        <button>
-        <ChevronDown />
-        </button>
+        <a href="#about">
+          <button>
+          <ChevronDown />
+          </button>
+
+        </a>
       </div>
     </section>
   );
