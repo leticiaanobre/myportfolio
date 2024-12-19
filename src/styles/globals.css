@@ -9,6 +9,7 @@
   --initial-color-mode: dark;
   --transition-duration: 0.3s;
   --fontColor: linear-gradient(to right, #3C85D8 0%, #554BC5 100%);
+  --textColor: #EDF2F7;
   --bgColor: linear-gradient(to bottom, #010208 0%, #000643 100%);
 }
 
@@ -35,7 +36,7 @@ html {
 
 body {
   background: var(--bgColor); 
-  color: var(--text-color);
+  color: var(--textColor);
   @apply font-sans;
 }
 
