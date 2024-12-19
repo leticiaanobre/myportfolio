@@ -11,8 +11,12 @@ export default function Footer() {
         </div>
         <div className='flex flex-row gap-10'>
             <Mail />
+          <a href="https://github.com/leticiaanobre">
             <Github />
+          </a>
+          <a href="https://www.linkedin.com/in/leticia-nobre-2716a4241/">
             <Linkedin />
+          </a>
             <MessageCircle />
         </div>
         <p className="font-thin text-1xl leading-relaxed">Made by <strong> Leticia Nobre</strong></p>
