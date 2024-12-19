@@ -19,7 +19,7 @@ export default function Navbar() {
       <h1 className="text-gradient font-extrabold text-2xl">DEVELOPER</h1>
       <div className='flex flex-grow justify-end gap-2'>
         <div className="flex flex-row gap-2">
-          <ThemeToggleButton/>
+          {/* <ThemeToggleButton/> */}
           <button onClick={toggleMenu} className="text-gray-800 dark:text-gray-200 md:hidden">
             {isMenuOpen ? <X className="h-6 w-6 text-color" /> : <Menu className="h-6 w-6 text-color" />}
           </button>

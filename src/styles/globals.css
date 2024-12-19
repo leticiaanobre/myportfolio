@@ -9,6 +9,7 @@
   --initial-color-mode: dark;
   --transition-duration: 0.3s;
   --fontColor: linear-gradient(to right, #3C85D8 0%, #554BC5 100%);
+  --bgColor: linear-gradient(to bottom, #010208 0%, #000643 100%);
 }
 
 [data-theme='dark'] {
@@ -67,7 +68,7 @@ body {
 }
 
 .bg-color {
-  background: var(--bg-color);
+  background: var(--bgColor);
 }
 
 .bg-button {
