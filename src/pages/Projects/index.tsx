@@ -59,20 +59,19 @@ export default function Projects() {
       
       {/* Project 3 */}
       <div className="flex flex-col md:flex-row gap-6 md:gap-14 mt-8 items-center md:items-start">
-        <div className="relative w-full h-60 md:w-[700px] md:h-[350px]">
+        <div className="relative w-full h-60 md:w-[900px] md:h-[350px]">
           <Image
-            src="/assets/Project1.svg"
+            src="/Nearby.jpg"
             alt="Project three"
             layout="fill"
             objectFit="cover"
             className="rounded-lg"
           />
         </div>
-        <div className="flex flex-col gap-4 justify-end items-center md:items-start text-center md:text-left">
-          <h1 className="text-1xl font-bold text-gradient">REAL ESTATE TEMPLATE</h1>
+        <div className="flex flex-col gap-4 justify-end items-center md:items-start text-center md:text-left md:max-w-xl">
+          <h1 className="text-1xl font-bold text-gradient">NEARBY APP</h1>
           <p className="font-extralight text-base md:text-2xl leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur{' '}
-            <strong>adipiscing elit. Ultrices lorem non feugiat egestas amet.</strong>
+          Nearby is a mobile app made with <strong>React Native</strong> that helps users find restaurants nearby and easily access exclusive deals. Users can explore avaliable options directly on a map. The app shows how many coupons each restaurant offers, and users can redeem them seamlessly using a QR code. The backend is built with <strong>Node.js</strong>, ensuring smooth data handling and efficient communication between the app and the server. This project combines geolocation, QR code functionality, and a clean interface for discovering and using restaurant deals.
           </p>
           <p className="font-extralight">Website Design</p>
           <ButtonComponent text="VIEW WORK" icon={ChevronRight} />
