@@ -31,6 +31,9 @@ export default function Navbar() {
           <a href="#about" className={`py-2 px-3 rounded-xl transition duration-300 ${
             colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
           }`}>About</a>
+          <a href="#skills" className={`py-2 px-3 rounded-xl transition duration-300 ${
+            colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
+          }`}>Skills</a>
           <a href="#projects" className={`py-2 px-3 rounded-xl transition duration-300 ${
             colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
           }`}>Projects</a>
@@ -45,6 +48,9 @@ export default function Navbar() {
               <a href="#about" className={`py-3 w-full ${
                 colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
               }`}>About</a>
+              <a href="#skills" className={`py-3 w-full ${
+                colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
+              }`}>Skills</a>
               <a href="#projects" className={`py-3 w-full ${
                 colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
               }`}>Projects</a>
