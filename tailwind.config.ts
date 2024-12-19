@@ -9,6 +9,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        'bounce-slow': 'bounce 4s ease-in-out infinite',
+      },
+      keyframes: {
+        'bounce-slow': {
+          '0%, 100%': {
+            transform: 'translateY(0)', 
+          },
+          '50%': {
+            transform: 'translateY(-20px)', 
+          },
+        },
+      },
       fontFamily: {
         sans: ['Work Sans', 'sans-serif'],
       },
