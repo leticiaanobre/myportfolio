@@ -34,7 +34,7 @@ html {
 }
 
 body {
-  background: var(--bg-color); /* Aplica o gradiente de fundo */
+  background: var(--bgColor); 
   color: var(--text-color);
   @apply font-sans;
 }
