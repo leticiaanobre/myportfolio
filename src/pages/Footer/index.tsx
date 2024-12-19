@@ -19,7 +19,7 @@ export default function Footer() {
           </a>
             <MessageCircle />
         </div>
-        <p className="font-thin text-1xl leading-relaxed">Made by <strong> Leticia Nobre</strong></p>
+        <p className="font-thin text-1xl leading-relaxed">Developed by <strong> Leticia Nobre</strong></p>
       </footer>
     </section>
   );

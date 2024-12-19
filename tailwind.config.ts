@@ -19,8 +19,13 @@ const config: Config = {
       colors: {
         customPurple: {
           DEFAULT: '#BC3CD8',
-          dark: '#8A2AB9',  // Um tom mais escuro, opcional
-          light: '#D8A4E5',  // Um tom mais claro, opcional
+          dark: '#8A2AB9',  
+          light: '#D8A4E5',  
+        },
+        button: {
+          DEFAULT: '#4A9FFF',
+          dark: '#417AFF',  
+          light: '#262AFD',  
         },
       },
     },

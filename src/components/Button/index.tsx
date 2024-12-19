@@ -16,7 +16,7 @@ const ButtonComponent: React.FC<ButtonComponentProps> = ({ text, icon: Icon, lin
   );
 
   const baseClass =
-    "flex flex-row text-sm items-center border border-color py-1 px-6 rounded-full gap-2 hover:bg-customPurple transition duration-300 group";
+    "flex flex-row text-sm items-center border border-color py-1 px-6 rounded-full gap-2 hover:bg-button transition duration-300 group";
 
   if (link) {
     return (
