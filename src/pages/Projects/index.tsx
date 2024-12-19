@@ -40,7 +40,7 @@ export default function Projects() {
       <div className="flex flex-col md:flex-row-reverse gap-6 md:gap-14 mt-8 items-center md:items-start">
         <div className="relative w-full h-60 md:w-[900px] md:h-[350px]">
           <Image
-            src="/Nutrilife.jpg"
+            src="/Nutrilifeimg.jpg"
             alt="Project two"
             layout="fill"
             objectFit="cover"
