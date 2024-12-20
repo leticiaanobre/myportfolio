@@ -29,7 +29,7 @@ export default function Initial() {
           </p>
         </div>
         <a href="#about">
-          <button>
+          <button className="animate-bounce">
             <ChevronDown />
           </button>
         </a>
