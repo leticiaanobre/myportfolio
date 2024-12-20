@@ -1,4 +1,8 @@
-import { SiJavascript, SiTypescript, SiReact, SiPostgresql, SiPython, SiScikitlearn, SiTailwindcss, SiStyledcomponents, SiFigma, SiJira, SiMongodb, SiFirebase, SiPowerbi, SiGooglesheets } from "react-icons/si";
+import { 
+  SiJavascript, SiTypescript, SiReact, SiPostgresql, SiPython, SiScikitlearn, 
+  SiTailwindcss, SiStyledcomponents, SiFigma, SiJira, SiMongodb, SiFirebase, 
+  SiPowerbi, SiGooglesheets, SiReactrouter, SiDocker, SiChakraui, SiNodedotjs 
+} from "react-icons/si";
 import { FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, FaDatabase, FaFileExcel } from "react-icons/fa";
 
 export default function Skills() {
@@ -9,13 +13,17 @@ export default function Skills() {
         <SkillCard icon={<SiJavascript />} title="JavaScript" />
         <SkillCard icon={<SiTypescript />} title="TypeScript" />
         <SkillCard icon={<SiReact />} title="ReactJS" />
+        <SkillCard icon={<SiReactrouter />} title="React Native" />
         <SkillCard icon={<SiPostgresql />} title="PostgreSQL" />
+        <SkillCard icon={<SiNodedotjs />} title="Node.js" />
         <SkillCard icon={<SiPython />} title="Python" />
         <SkillCard icon={<SiScikitlearn />} title="Scikit-learn" />
         <SkillCard icon={<FaHtml5 />} title="HTML5" />
         <SkillCard icon={<FaCss3Alt />} title="CSS3" />
         <SkillCard icon={<SiTailwindcss />} title="Tailwind CSS" />
         <SkillCard icon={<SiStyledcomponents />} title="Styled Components" />
+        <SkillCard icon={<SiChakraui />} title="Chakra UI" />
+        <SkillCard icon={<SiDocker />} title="Docker" />
         <SkillCard icon={<SiFigma />} title="Figma" />
         <SkillCard icon={<FaGitAlt />} title="Git" />
         <SkillCard icon={<FaGithub />} title="GitHub" />

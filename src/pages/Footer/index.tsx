@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail, MessageCircle } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -17,7 +18,7 @@ export default function Footer() {
             <Mail className="cursor-pointer hover:text-blue-500 transition-colors duration-300" />
           </a>
           <a href="https://github.com/leticiaanobre" target="_blank" rel="noopener noreferrer">
-            <Github className="cursor-pointer hover:text-blue-500 transition-colors duration-300" />
+            <FaGithub size={23} className="cursor-pointer hover:text-blue-500 transition-colors duration-300"/>
           </a>
           <a
             href="https://www.linkedin.com/in/leticia-nobre-2716a4241/"
