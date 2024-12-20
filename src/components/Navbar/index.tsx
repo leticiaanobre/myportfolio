@@ -26,16 +26,16 @@ export default function Navbar() {
         </div>
         <div className="hidden md:flex items-center gap-4">
           <a href="#home" className={`py-2 px-3 rounded-xl transition duration-300 ${
-            colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
+            colorMode === 'light' ? 'hover:text-blue-300 transition-colors' : 'hover:text-blue-300 transition-colors'
           }`}>Home</a>
           <a href="#about" className={`py-2 px-3 rounded-xl transition duration-300 ${
-            colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
+            colorMode === 'light' ? 'hover:text-blue-300 transition-colors' : 'hover:text-blue-300 transition-colors'
           }`}>About</a>
           <a href="#skills" className={`py-2 px-3 rounded-xl transition duration-300 ${
-            colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
+            colorMode === 'light' ? 'hover:text-blue-300 transition-colors' : 'hover:text-blue-300 transition-colors'
           }`}>Skills</a>
           <a href="#projects" className={`py-2 px-3 rounded-xl transition duration-300 ${
-            colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
+            colorMode === 'light' ? 'hover:text-blue-300 transition-colors' : 'hover:text-blue-300 transition-colors'
           }`}>Projects</a>
         </div>
 
@@ -43,16 +43,16 @@ export default function Navbar() {
           <div className="absolute top-16 left-0 w-full bg-background bg-color shadow-lg md:hidden">
             <div className="flex flex-col items-center py-4">
               <a href="#home" className={`py-3 w-full text-center ${
-                colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
+                colorMode === 'light' ? 'hover:text-blue-300 transition-colors' : 'hover:text-blue-300 transition-colors'
               }`}>Home</a>
               <a href="#about" className={`py-3 w-full text-center ${
-                colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
+                colorMode === 'light' ? 'hover:text-blue-300 transition-colors' : 'hover:text-blue-300 transition-colors'
               }`}>About</a>
               <a href="#skills" className={`py-3 w-full text-center ${
-                colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
+                colorMode === 'light' ? 'hover:text-blue-300 transition-colors' : 'hover:text-blue-300 transition-colors'
               }`}>Skills</a>
               <a href="#projects" className={`py-3 w-full text-center ${
-                colorMode === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-700'
+                colorMode === 'light' ? 'hover:text-blue-300 transition-colors' : 'hover:text-blue-300 transition-colors'
               }`}>Projects</a>
             </div>
           </div>
