@@ -8,11 +8,7 @@ export default function About() {
         <div className="w-full md:w-2/5 flex flex-col gap-4">
           <h1 className="text-1xl font-medium">A BIT ABOUT ME</h1>
           <p className="font-extralight text-base md:text-2xl leading-relaxed">
-            I am currently a Computer Science student. I work as a{" "}
-            <strong>front-end developer</strong> and I am also deeply passionate
-            about <strong>data science</strong> and <strong>AI algorithms</strong>. My
-            journey in the tech world has been driven by a strong curiosity and
-            a desire to explore the limitless possibilities within these fields.
+          I am currently a Computer Science student. I work as a <strong>software developer</strong> with a focus on <strong>web</strong> and <strong>mobile development</strong>, utilizing technologies like Node.js, ReactJS, and React Native. My journey in the tech world has been driven by curiosity and a passion for building efficient and user-centered applications.
           </p>
         </div>
 
