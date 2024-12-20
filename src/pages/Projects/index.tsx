@@ -74,7 +74,7 @@ export default function Projects() {
           Nearby is a mobile app made with <strong>React Native</strong> that helps users find restaurants nearby and easily access exclusive deals. Users can explore avaliable options directly on a map. The app shows how many coupons each restaurant offers, and users can redeem them seamlessly using a QR code. The backend is built with <strong>Node.js</strong>, ensuring smooth data handling and efficient communication between the app and the server. This project combines geolocation, QR code functionality, and a clean interface for discovering and using restaurant deals.
           </p>
           <p className="font-extralight">Mobile Design</p>
-          <ButtonComponent text="VIEW WORK" icon={ChevronRight} />
+          <ButtonComponent text="VIEW WORK" icon={ChevronRight} link="https://github.com/leticiaanobre/nearby-front-mobile" />
         </div>
       </div>
     </section>
