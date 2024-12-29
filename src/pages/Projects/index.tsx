@@ -77,6 +77,27 @@ export default function Projects() {
           <ButtonComponent text="VIEW WORK" icon={ChevronRight} link="https://github.com/leticiaanobre/nearby-front-mobile" />
         </div>
       </div>
+
+        {/* Project 4 */}
+        <div className="flex flex-col md:flex-row-reverse gap-6 md:gap-14 mt-8 items-center md:items-start">
+        <div className="relative w-full h-60 md:w-[900px] md:h-[350px]">
+          <Image
+            src="/Communityy.png"
+            alt="Project two"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-lg"
+          />
+        </div>
+        <div className="flex flex-col gap-4 justify-end items-center md:items-start text-center  md:text-left md:max-w-xl">
+          <h1 className="text-1xl font-bold text-gradient">COMMUNITY</h1>
+          <p className="font-extralight text-base md:text-2xl leading-relaxed">
+          This is a real-time chat application built with a modern tech stack. The frontend is developed using <strong>ReactJS</strong>, <strong>Zustand</strong> for state management, <strong>Axios</strong> for API requests, and <strong>Socket.IO</strong> for real-time updates. The backend utilizes <strong>Node.js</strong> with <strong>Express.js</strong>, <strong>MongoDB</strong> for database storage, <strong>JWT</strong> for authentication, and <strong>Socket.IO</strong> for WebSocket communication. The app includes CORS and cookie-based authentication to ensure secure and seamless user interactions.
+          </p>
+          <p className="font-extralight">Website Design</p>
+          <ButtonComponent text="VIEW WORK" icon={ChevronRight} link="https://github.com/leticiaanobre/chatapp-front"/>
+        </div>
+      </div>
     </section>
   );
 }
