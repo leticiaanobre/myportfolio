@@ -10,7 +10,8 @@
   --transition-duration: 0.3s;
   --fontColor: linear-gradient(to right, #3C85D8 0%, #554BC5 100%);
   --textColor: #EDF2F7;
-  --bgColor: linear-gradient(to bottom, #010417 0%, #000643 100%);
+  /* --bgColor: linear-gradient(to bottom, #010417 0%, #000643 100%); */
+  --bgColor: #0f172a;
 }
 
 [data-theme='dark'] {
@@ -45,7 +46,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-color);
+  background: #0f172a;
 }
 
 ::-webkit-scrollbar-thumb {
