@@ -8,10 +8,12 @@
 :root {
   --initial-color-mode: dark;
   --transition-duration: 0.3s;
-  --fontColor: linear-gradient(to right, #3C85D8 0%, #554BC5 100%);
+  --fontColor: linear-gradient(to right, #BC3CD8 0%, #C54B8C 100%);
+  /* --fontColor: linear-gradient(to right, #3C85D8 0%, #554BC5 100%); */
+  /* --fontColor: linear-gradient(to right, #00FFB9 0%, #009688 100%); */
   --textColor: #EDF2F7;
   /* --bgColor: linear-gradient(to bottom, #010417 0%, #000643 100%); */
-  --bgColor: #0f172a;
+  --bgColor: #000;
 }
 
 [data-theme='dark'] {
@@ -46,7 +48,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0f172a;
+  background: #000;
 }
 
 ::-webkit-scrollbar-thumb {

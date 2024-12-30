@@ -31,7 +31,7 @@ export default function Home() {
                 <br />
                 A <strong className="font-bold text-gradient">Software Developer</strong>
               </h1>
-              <p className="text-4xl sm:text-5xl md:text-5xl font-medium text-gray-500">
+              <p className="text-4xl sm:text-5xl md:text-5xl font-medium">
                 based in Brazil.
               </p>
             </div>
