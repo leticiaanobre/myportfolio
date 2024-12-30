@@ -40,7 +40,7 @@ export default function Navbar() {
         </div>
 
         {isMenuOpen && (
-          <div className="absolute top-16 left-0 w-full bg-background bg-color shadow-lg md:hidden">
+          <div className="absolute top-16 left-0 w-full bg-background bg-color shadow-lg md:hidden z-50">
             <div className="flex flex-col items-center py-4">
               <a href="#home" className={`py-3 w-full text-center ${
                 colorMode === 'light' ? 'hover:text-blue-300 transition-colors' : 'hover:text-blue-300 transition-colors'
