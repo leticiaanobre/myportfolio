@@ -73,7 +73,7 @@ export default function Skills() {
   ];
 
   return (
-    <section className="min-h-screen px-6 md:px-24 py-16 gap-10 flex flex-col bg-slate-800 mx-6 md:mx-16 rounded-2xl" id="skills">
+    <section className="min-h-screen px-6 md:px-24 py-16 gap-10 flex flex-col bg-[#1a1a24] mx-6 md:mx-16 rounded-2xl" id="skills">
       <h2 className="font-extralight text-2xl text-center md:text-left">My <strong className="font-semibold">Skills</strong></h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {skillCategories.map((category) => (
@@ -97,7 +97,7 @@ export default function Skills() {
 function SkillCard({ icon, title }: { icon: React.ReactNode; title: string }) {
   return (
     <div className="flex flex-col items-center group hover:bg-white dark:hover:bg-gray-800 p-3 rounded-lg transition-colors shadow-sm hover:shadow-md">
-      <div className="text-3xl md:text-4xl text-blue-500 dark:text-blue-400 mb-2 group-hover:scale-110 transition-transform">{icon}</div>
+      <div className="text-3xl md:text-4xl text-violet-400 mb-2 group-hover:scale-110 transition-transform">{icon}</div>
       <p className="text-sm md:text-base font-light text-center text-gray-700 dark:text-gray-300">{title}</p>
     </div>
   );
