@@ -73,7 +73,7 @@ export default function Skills() {
   ];
 
   return (
-    <section className="w-full min-h-screen px-6 md:px-24 py-16 gap-10 flex flex-col " id="skills">
+    <section className="min-h-screen px-6 md:px-24 py-16 gap-10 flex flex-col bg-slate-800 mx-6 md:mx-16 rounded-2xl" id="skills">
       <h2 className="font-extralight text-2xl text-center md:text-left">My <strong className="font-semibold">Skills</strong></h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {skillCategories.map((category) => (
