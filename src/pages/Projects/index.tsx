@@ -10,7 +10,7 @@ export default function Projects() {
       </p>
       
       {/* Project 1 */}
-      <div className="flex flex-col md:flex-row gap-6 md:gap-14 items-center md:items-start bg-gray-950 rounded-2xl w-full p-6 md:p-16">
+      <div className="flex flex-col md:flex-row gap-6 md:gap-14 items-center md:items-start bg-[#100C21] rounded-2xl w-full p-6 md:p-16">
         <div className="relative w-full h-96 md:w-[900px] md:h-[350px]">
           <Image
             src="/Mockup.png"
@@ -37,7 +37,7 @@ export default function Projects() {
       </div>
       
       {/* Project 2 */}
-      <div className="flex flex-col md:flex-row-reverse gap-6 md:gap-14 mt-8 items-center md:items-start bg-gray-950 rounded-2xl w-full p-6 md:p-16">
+      <div className="flex flex-col md:flex-row-reverse gap-6 md:gap-14 mt-8 items-center md:items-start bg-[#100C21] rounded-2xl w-full p-6 md:p-16">
         <div className="relative w-full h-60 md:w-[900px] md:h-[350px]">
           <Image
             src="/Nutrilifeimg.jpg"
@@ -58,7 +58,7 @@ export default function Projects() {
       </div>
       
       {/* Project 3 */}
-      <div className="flex flex-col md:flex-row gap-6 md:gap-14 mt-8 items-center md:items-start bg-gray-950 rounded-2xl w-full p-6 md:p-16">
+      <div className="flex flex-col md:flex-row gap-6 md:gap-14 mt-8 items-center md:items-start bg-[#100C21] rounded-2xl w-full p-6 md:p-16">
         <div className="relative w-full h-60 md:w-[900px] md:h-[350px]">
           <Image
             src="/Nearbyapp.jpg"
@@ -79,7 +79,7 @@ export default function Projects() {
       </div>
 
         {/* Project 4 */}
-        <div className="flex flex-col md:flex-row-reverse gap-6 md:gap-14 mt-8 items-center md:items-start bg-gray-950 rounded-2xl w-full p-6 md:p-16">
+        <div className="flex flex-col md:flex-row-reverse gap-6 md:gap-14 mt-8 items-center md:items-start bg-[#100C21] rounded-2xl w-full p-6 md:p-16">
         <div className="relative w-full h-60 md:w-[900px] md:h-[350px]">
           <Image
             src="/Communityy.png"
