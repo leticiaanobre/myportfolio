@@ -101,7 +101,7 @@ function SkillCard({ icon, title }: { icon: React.ReactNode; title: string }) {
   return (
     <div
       ref={ref}
-      className={`flex flex-col items-center group hover:bg-white dark:hover:bg-gray-800 p-3 rounded-lg shadow-sm hover:shadow-md 
+      className={`flex flex-col items-center group dark:hover:bg-gray-800 p-3 rounded-lg shadow-sm hover:shadow-md 
         ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}
         transition-transform duration-700 ease-in-out
         transition-opacity duration-700 ease-in-out`} // Transição separada
