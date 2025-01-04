@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       animation: {
         'bounce-slow': 'bounce 4s ease-in-out infinite',
+        'fade-in': 'fadeIn 1s ease-out forwards', // Add fade-in animation
       },
       keyframes: {
         'bounce-slow': {
@@ -20,6 +21,10 @@ const config: Config = {
           '50%': {
             transform: 'translateY(-20px)', 
           },
+        },
+        'fadeIn': {
+          '0%': { opacity: "0", transform: 'translateY(10px)' },
+          '100%': { opacity: "1", transform: 'translateY(0)' },
         },
       },
       fontFamily: {
