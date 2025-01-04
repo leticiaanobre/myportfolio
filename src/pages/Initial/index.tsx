@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import { ChevronDown } from 'lucide-react';
-import useIntersectionObserver from "@/hook/intersectionObserver"; // Adicionando o hook
+import useIntersectionObserver from "@/hook/intersectionObserver"; 
 
 export default function Home() {
-  // Aplica o observer no conteúdo da seção principal
   const { isVisible: navbarVisible, ref: navbarRef } = useIntersectionObserver<HTMLDivElement>();
   const { isVisible: sectionVisible, ref: sectionRef } = useIntersectionObserver<HTMLDivElement>();
 
