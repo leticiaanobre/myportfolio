@@ -1,8 +1,13 @@
-import Image from "next/image"
-import Navbar from "@/components/Navbar"
-import { ChevronDown } from 'lucide-react'
+import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import { ChevronDown } from 'lucide-react';
+import useIntersectionObserver from "@/hook/intersectionObserver"; // Adicionando o hook
 
 export default function Home() {
+  // Aplica o observer no conteúdo da seção principal
+  const { isVisible: navbarVisible, ref: navbarRef } = useIntersectionObserver<HTMLDivElement>();
+  const { isVisible: sectionVisible, ref: sectionRef } = useIntersectionObserver<HTMLDivElement>();
+
   return (
     <div className="min-h-screen relative w-full">
       <div className="absolute inset-0">
@@ -13,9 +18,12 @@ export default function Home() {
       </div>
 
       <div className="relative">
-        <Navbar />
-        <section className="container min-h-screen grid lg:grid-cols-2 items-center pt-10">
-          <div className="relative aspect-square w-full max-w-2xl mx-auto lg:mx-0 md:border md:border-gray-800 ">
+        <Navbar ref={navbarRef} /> {/* Adicionando o ref para o Navbar */}
+        <section 
+          ref={sectionRef} 
+          className={`container min-h-screen grid lg:grid-cols-2 items-center pt-10 ${sectionVisible ? 'animate-fade-in' : 'opacity-0'} transition-all duration-700`}
+        >
+          <div className="relative aspect-square w-full max-w-2xl mx-auto lg:mx-0 md:border md:border-gray-800">
             <Image
               src="/LETICIADARK1.JPG"
               alt="Portrait photo"
@@ -24,7 +32,7 @@ export default function Home() {
               priority
             />
           </div>
-          <div className="space-y-6 p-8 lg:-ml-24 relative z-10 bg-[#1a1a24] md:bg-transparent ">
+          <div className="space-y-6 p-8 lg:-ml-24 relative z-10 bg-[#1a1a24] md:bg-transparent">
             <div className="space-y-2">
               <h1 className="text-4xl sm:text-5xl md:text-5xl font-medium text-white">
                 I&apos;m Leticia Nobre.
@@ -46,10 +54,8 @@ export default function Home() {
               </button>
             </a>
           </div>
-
         </section>
       </div>
     </div>
-  )
+  );
 }
-
