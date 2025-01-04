@@ -99,12 +99,18 @@ function SkillCard({ icon, title }: { icon: React.ReactNode; title: string }) {
   const { isVisible, ref } = useIntersectionObserver<HTMLDivElement>();
 
   return (
-    <div 
+    <div
       ref={ref}
-      className={`flex flex-col items-center group hover:bg-white dark:hover:bg-gray-800 p-3 rounded-lg transition-colors shadow-sm hover:shadow-md ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} transform transition-all duration-700 ease-in-out`}
+      className={`flex flex-col items-center group hover:bg-white dark:hover:bg-gray-800 p-3 rounded-lg shadow-sm hover:shadow-md 
+        ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}
+        transition-transform duration-700 ease-in-out
+        transition-opacity duration-700 ease-in-out`} // Transição separada
     >
-      <div className="text-3xl md:text-4xl text-violet-400 mb-2 group-hover:scale-110 transition-transform">{icon}</div>
+      <div className="text-3xl md:text-4xl text-violet-400 mb-2 group-hover:scale-110 transition-transform">
+        {icon}
+      </div>
       <p className="text-sm md:text-base font-light text-center text-gray-700 dark:text-gray-300">{title}</p>
     </div>
   );
 }
+
