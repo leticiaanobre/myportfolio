@@ -109,7 +109,7 @@ function SkillCard({ icon, title }: { icon: React.ReactNode; title: string }) {
       <div className="text-3xl md:text-4xl text-violet-400 mb-2 group-hover:scale-110 transition-transform">
         {icon}
       </div>
-      <p className="text-sm md:text-base font-light text-center text-gray-700 dark:text-gray-300">{title}</p>
+      <p className="text-sm md:text-base font-light text-center text-gray-300">{title}</p>
     </div>
   );
 }
