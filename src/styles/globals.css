@@ -8,12 +8,19 @@
 :root {
   --initial-color-mode: dark;
   --transition-duration: 0.3s;
-  --fontColor: linear-gradient(to right, #BC3CD8 0%, #C54B8C 100%);
+ --fontColor: linear-gradient(to right, rgba(156, 102, 255, 0.8), rgba(102, 153, 255, 0.8), rgba(51, 102, 204, 0.8));
+  /* --fontColor: linear-gradient(to right, #F72F00 0%, #DBA200 100%); */
+  /* --fontColor: linear-gradient(to right, #BC3CD8 0%, #C54B8C 100%); */
   /* --fontColor: linear-gradient(to right, #3C85D8 0%, #554BC5 100%); */
   /* --fontColor: linear-gradient(to right, #00FFB9 0%, #009688 100%); */
-  --textColor: #EDF2F7;
+  --textColor: #D4D4D4;
+  --textPrimary: rgba(102, 153, 255, 0.8);
   /* --bgColor: linear-gradient(to bottom, #010417 0%, #000643 100%); */
-  --bgColor: #000;
+  --bgColor: #070920;
+  --bgRadial: radial-gradient(circle 300px, rgba(102, 153, 255, 0.1), rgba(51, 102, 204, 0.1), rgba(7, 9, 32, 0));
+  --bgRadialSecondary: radial-gradient(circle 500px at 90% 50%, rgba(102, 153, 255, 0.2), rgba(51, 102, 204, 0.1), rgba(7, 9, 32));
+
+  --bgRadialSecondarySM: radial-gradient(circle 900px at center, rgba(102, 153, 255, 0.2), rgba(51, 102, 204, 0.1), rgba(7, 9, 32));
 }
 
 [data-theme='dark'] {
@@ -67,12 +74,30 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.text-primary {
+  background: var(--textPrimary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .border-color {
   border-color: var(--color-border);
 }
 
 .bg-color {
   background: var(--bgColor);
+}
+
+.bg-radial {
+  background: var(--bgRadial);
+}
+
+.bg-radialsecondary {
+  background: var(--bgRadialSecondary);
+}
+
+.bg-radialsecondarysm {
+  background: var(--bgRadialSecondarySM);
 }
 
 .bg-button {

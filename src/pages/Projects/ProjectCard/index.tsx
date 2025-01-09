@@ -27,7 +27,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isReversed }) => {
     <div
       ref={ref} // Vincula a referência do hook
       className={`flex flex-col ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'} 
-      gap-6 md:gap-14 items-center md:items-start bg-[#100C21] rounded-2xl w-full p-6 md:p-16
+      gap-6 md:gap-14 items-center md:items-start bg-[#0E1131] rounded-2xl w-full p-6 md:p-16
       transform transition-all duration-700 ease-in-out 
       ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} 
     >
@@ -41,9 +41,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, isReversed }) => {
         />
       </div>
       <div className="flex flex-col gap-4 justify-end items-center md:items-start text-center md:text-left md:max-w-lg">
-        <h1 className="text-1xl font-bold text-gradient">{project.title}</h1>
+        <h1 className="text-lg md:text-2xl font-bold ">{project.title}</h1>
+        <h1 className="text-base md:text-lg font-semibold text-primary">About the project</h1>
         <p
-          className="font-extralight text-base md:text-2xl leading-relaxed"
+          className="font-extralight text-base md:text-xl leading-relaxed"
           dangerouslySetInnerHTML={{ __html: project.description }}
         />
         <p className="font-extralight">{project.designType}</p>
