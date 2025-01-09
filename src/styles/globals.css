@@ -17,7 +17,7 @@
   --textPrimary: rgba(102, 153, 255, 0.8);
   /* --bgColor: linear-gradient(to bottom, #010417 0%, #000643 100%); */
   --bgColor: #070920;
-  --bgRadial: radial-gradient(circle 300px, rgba(102, 153, 255, 0.1), rgba(51, 102, 204, 0.1), rgba(7, 9, 32, 0));
+  --bgRadial: radial-gradient(circle 300px, rgba(102, 153, 255, 0.2), rgba(51, 102, 204, 0.1), rgba(7, 9, 32, 0));
   --bgRadialSecondary: radial-gradient(circle 500px at 90% 50%, rgba(102, 153, 255, 0.2), rgba(51, 102, 204, 0.1), rgba(7, 9, 32));
 
   --bgRadialSecondarySM: radial-gradient(circle 900px at center, rgba(102, 153, 255, 0.2), rgba(51, 102, 204, 0.1), rgba(7, 9, 32));
