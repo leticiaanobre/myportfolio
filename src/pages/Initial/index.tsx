@@ -8,7 +8,7 @@ export default function Home() {
       <div className="absolute inset-0">
         <div className="grid grid-cols-[1fr_2fr] h-full">
           <div className="bg-black" />
-          <div className="bg-black md:bg-[#1a1a24]" />
+          <div className="bg-black md:bg-[#0E1131]" />
         </div>
       </div>
 
@@ -24,7 +24,7 @@ export default function Home() {
               priority
             />
           </div>
-          <div className="space-y-6 p-8 lg:-ml-24 relative z-10 bg-[#1a1a24] md:bg-transparent animate-fade-in animate-delay-200">
+          <div className="space-y-6 p-8 lg:-ml-24 relative z-10 bg-[#0E1131] md:bg-transparent animate-fade-in animate-delay-200">
             <div className="space-y-2">
               <h1 className="text-4xl sm:text-5xl md:text-5xl font-medium text-white">
                 I&apos;m Leticia Nobre.
