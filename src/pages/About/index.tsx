@@ -1,6 +1,6 @@
 import Image from "next/image";
 import useIntersectionObserver from "@/hook/intersectionObserver";
-import { InfiniteScroll } from "./components/infinite-scroll";
+import InfiniteScroll from "./components/infinite-scroll";
 
 export default function About() {
   const { isVisible, ref } = useIntersectionObserver<HTMLDivElement>();

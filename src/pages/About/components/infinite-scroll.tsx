@@ -15,7 +15,7 @@ const skills = [
   }
 ]
 
-export function InfiniteScroll() {
+const InfiniteScroll = () => {
   return (
     <div className="w-full overflow-hidden bg-gradient-to-r py-8">
       {skills.map((skillSet, index) => (
@@ -62,4 +62,5 @@ export function InfiniteScroll() {
     </div>
   )
 }
+export default InfiniteScroll;
 
