@@ -11,7 +11,9 @@ const config: Config = {
     extend: {
       animation: {
         'bounce-slow': 'bounce 4s ease-in-out infinite',
-        'fade-in': 'fadeIn 1s ease-out forwards', // Add fade-in animation
+        'fade-in': 'fadeIn 1s ease-out forwards',
+        'scroll': 'scroll 40s linear infinite',
+        'scroll-reverse': 'scroll-reverse 40s linear infinite',
       },
       keyframes: {
         'bounce-slow': {
@@ -25,6 +27,14 @@ const config: Config = {
         'fadeIn': {
           '0%': { opacity: "0", transform: 'translateY(10px)' },
           '100%': { opacity: "1", transform: 'translateY(0)' },
+        },
+        'scroll': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        'scroll-reverse': {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },
         },
       },
       fontFamily: {
