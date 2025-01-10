@@ -25,16 +25,28 @@ export default function Home() {
             />
           </div>
           <div className="space-y-6 p-8 lg:-ml-24 relative z-10 bg-[#0E1131] md:bg-transparent animate-fade-in animate-delay-200">
-            <div className="space-y-2">
-              <h1 className="text-4xl sm:text-5xl md:text-5xl font-medium text-white">
-                I&apos;m Leticia Nobre.
-                <br />
-                A <strong className="font-bold text-gradient">Software Developer</strong>
-              </h1>
-              <p className="text-4xl sm:text-5xl md:text-5xl font-medium">
-                based in Brazil.
-              </p>
+            <div className="flex flex-col md:flex-row items-center space-x-4">
+              <div>
+                <h1 className="text-4xl sm:text-5xl md:text-5xl font-medium text-white">
+                  I&apos;m Leticia Nobre.
+                  <br />
+                  A <strong className="font-bold text-gradient">Software Developer</strong>
+                </h1>
+                <p className="text-4xl sm:text-5xl md:text-5xl font-medium">
+                  based in Brazil.
+                </p>
+              </div>
+              <div className="w-72 h-36 md:w-36 relative">
+                <Image
+                  src="/logo.png"
+                  alt="Portrait photo"
+                  layout="fill"
+                  className="object-cover"
+                  priority
+                />
+              </div>
             </div>
+
             <p className="text-base md:text-xl font-extralight max-w-2xl text-gray-300">
               I&apos;m passionate about building efficient web applications that deliver great user experiences.
               I love solving complex problems with clean and maintainable code.
