@@ -3,15 +3,15 @@ import { Code, PlayCircle, MessageCircle } from 'lucide-react'
 const skills = [
   {
     icon: <Code className="w-5 h-5" />,
-    items: ['Desenvolvimento Web', 'Design Web', 'Mobile', 'Frontend', 'Backend']
+    items: ['Web Development', 'Web Design', 'Mobile', 'Frontend', 'Backend']
   },
   {
     icon: <PlayCircle className="w-5 h-5" />,
-    items: ['Jogos', 'Livros', 'Séries', 'Amigos', 'Familia']
+    items: ['Games', 'Books', 'Series', 'Friends', 'Family']
   },
   {
     icon: <MessageCircle className="w-5 h-5" />,
-    items: ['Proativa', 'Comunicativa', 'Trabalho em equipe', 'Rápido aprendizado', 'Passional']
+    items: ['Proactive', 'Communicative', 'Teamwork', 'Quick learner', 'Passionate']
   }
 ]
 
