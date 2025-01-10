@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['localhost', 'leticianobreportfolio.vercel.app'],
+    domains: ['localhost', 'Leticia Nobre | Portfolio'],
   },
 };
 
