@@ -2,7 +2,6 @@ import {
   SiJavascript, SiTypescript, SiReact, SiPostgresql, SiPython, SiScikitlearn, 
   SiTailwindcss, SiStyledcomponents, SiFigma, SiJira, SiMongodb, SiFirebase, 
   SiGooglesheets, SiReactrouter, SiDocker, SiChakraui, SiNodedotjs,
-  SiMicrosoftexcel,
   SiShadcnui,
   SiNextui,
   SiExpress
@@ -74,8 +73,6 @@ export default function Skills() {
         { icon: <FaGithub />, title: "GitHub" },
         { icon: <SiJira />, title: "Jira" },
         { icon: <FaChartBar />, title: "Power BI" },
-        // { icon: <SiMicrosoftexcel />, title: "Excel" },
-        // { icon: <SiGooglesheets />, title: "Google Sheets" },
         { icon: <FaDatabase />, title: "Data Analysis" },
         { icon: <SiScikitlearn />, title: "Scikit-learn" },
       ]
