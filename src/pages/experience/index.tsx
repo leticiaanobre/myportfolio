@@ -51,13 +51,13 @@ export default function Experience() {
               <div className="flex flex-col items-center mr-6 md:mr-10">
                 <div className="w-4 h-4 rounded-full bg-button-dark shadow-[0_0_10px_rgba(65,122,255,0.8)] border-2 border-[#070920] z-10" />
                 {index !== experiences.length - 1 && (
-                  <div className="w-px h-full bg-gray-800/40" />
+                  <div className="w-px h-full bg-gray-600/40" />
                 )}
               </div>
 
               {/* Content Card */}
               <div className="pb-12 flex-grow">
-                <div className="rounded-lg border border-gray-800 p-6 backdrop-blur-sm hover:border-button-dark transition-all group bg-[#0E1131]/10">
+                <div className="rounded-lg  p-6 backdrop-blur-sm hover:border-button-dark transition-all group bg-[#0E1131]">
                   <span className="text-primary font-bold text-sm block mb-1">
                     {exp.period}
                   </span>

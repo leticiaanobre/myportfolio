@@ -1,7 +1,6 @@
 import Image from 'next/image';
-import ButtonComponent from '@/components/Button';
-import { ChevronRight } from 'lucide-react';
-import useIntersectionObserver from '@/hook/intersectionObserver'; // Importando o hook
+import { ArrowUpRight } from 'lucide-react';
+import useIntersectionObserver from '@/hook/intersectionObserver';
 
 interface ProjectCardProps {
   project: {
@@ -10,45 +9,63 @@ interface ProjectCardProps {
     designType: string;
     imageUrl: string;
     link: string;
+    bgColor?: string;
   };
-  isReversed: boolean;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project, isReversed }) => {
-  // Garantir que o hook é chamado independentemente de condições
+const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const { isVisible, ref } = useIntersectionObserver<HTMLDivElement>();
-
-  // Verifique as condições depois de chamar o hook
-  if (!project || !project.imageUrl || !project.title || !project.description) {
-    return <div>Invalid project data</div>; // Mensagem genérica em caso de dados ausentes
-  }
 
   return (
     <div
-      ref={ref} // Vincula a referência do hook
-      className={`flex flex-col ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'} 
-      gap-6 md:gap-14 items-center md:items-start bg-[#0E1131] rounded-2xl w-full p-6 md:p-16
-      transform transition-all duration-700 ease-in-out 
-      ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`} 
+      ref={ref}
+      className={`group relative flex flex-col gap-4 transition-all duration-1000 ease-out
+      ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'}`}
     >
-      <div className="relative w-full h-60 md:w-[900px] md:h-[350px]">
+      {/* Container da Imagem com Aspect Ratio */}
+      <a 
+        href={project.link} 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className={`relative aspect-[16/10] w-full overflow-hidden rounded-3xl ${project.bgColor || 'bg-gray-800'}`}
+      >
         <Image
           src={project.imageUrl}
           alt={project.title}
-          layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
-      </div>
-      <div className="flex flex-col gap-4 justify-end items-center md:items-start text-center md:text-left md:max-w-lg">
-        <h1 className="text-lg md:text-2xl font-bold ">{project.title}</h1>
-        <h1 className="text-base md:text-lg font-semibold text-primary">About the project</h1>
-        <p
-          className="font-extralight text-base md:text-xl leading-relaxed"
-          dangerouslySetInnerHTML={{ __html: project.description }}
-        />
-        <p className="font-extralight">{project.designType}</p>
-        <ButtonComponent text="VIEW WORK" icon={ChevronRight} link={project.link} />
+        
+        {/* Overlay de Hover (Opcional) */}
+        {/* <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+             <div className="bg-white text-black p-4 rounded-full">
+                <ArrowUpRight size={24} />
+             </div>
+        </div> */}
+      </a>
+
+      {/* Textos do Card */}
+      <div className="flex flex-col gap-2 px-2 mt-2">
+        <div className="flex justify-between items-start">
+            <span className="text-primary font-medium text-sm tracking-widest uppercase">
+                {project.designType}
+            </span>
+        </div>
+        
+        <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-primary transition-colors">
+            {project.title}
+        </h3>
+        
+        <p className="text-gray-400 font-extralight text-sm md:text-base leading-relaxed line-clamp-2 md:line-clamp-3">
+            {project.description}
+        </p>
+
+        <a 
+            href={project.link}
+            className="flex items-center gap-2 text-sm font-semibold mt-2 hover:underline underline-offset-4"
+        >
+            VIEW CASE STUDY <ArrowUpRight size={16} />
+        </a>
       </div>
     </div>
   );

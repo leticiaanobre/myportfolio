@@ -33,6 +33,9 @@ const Navbar = forwardRef<HTMLDivElement, {}>((props, ref) => {
           <a href="#skills" className={`py-2 px-3 rounded-xl transition duration-300 ${
             colorMode === 'light' ? 'hover:text-blue-300 transition-colors' : 'hover:text-blue-300 transition-colors'
           }`}>Skills</a>
+          <a href="#experience" className={`py-2 px-3 rounded-xl transition duration-300 ${
+            colorMode === 'light' ? 'hover:text-blue-300 transition-colors' : 'hover:text-blue-300 transition-colors'
+          }`}>Experience</a>
           <a href="#projects" className={`py-2 px-3 rounded-xl transition duration-300 ${
             colorMode === 'light' ? 'hover:text-blue-300 transition-colors' : 'hover:text-blue-300 transition-colors'
           }`}>Projects</a>
@@ -50,6 +53,9 @@ const Navbar = forwardRef<HTMLDivElement, {}>((props, ref) => {
               <a href="#skills" className={`py-3 w-full text-center ${
                 colorMode === 'light' ? 'hover:text-blue-300 transition-colors' : 'hover:text-blue-300 transition-colors'
               }`}>Skills</a>
+              <a href="#experience" className={`py-3 w-full text-center ${
+                colorMode === 'light' ? 'hover:text-blue-300 transition-colors' : 'hover:text-blue-300 transition-colors'
+              }`}>Experience</a>
               <a href="#projects" className={`py-3 w-full text-center ${
                 colorMode === 'light' ? 'hover:text-blue-300 transition-colors' : 'hover:text-blue-300 transition-colors'
               }`}>Projects</a>

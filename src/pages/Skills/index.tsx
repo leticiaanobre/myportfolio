@@ -4,9 +4,11 @@ import {
   SiGooglesheets, SiReactrouter, SiDocker, SiChakraui, SiNodedotjs,
   SiShadcnui,
   SiNextui,
-  SiExpress
+  SiExpress,
+  SiDatabricks,
+  SiOpenai
 } from "react-icons/si";
-import { FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, FaDatabase, FaChartBar } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, FaDatabase, FaChartBar, FaMicrophone, FaComments, FaRobot, FaCloud } from "react-icons/fa";
 import { TbBrandVite } from "react-icons/tb";
 import { RiNextjsFill } from "react-icons/ri";
 import useIntersectionObserver from "@/hook/intersectionObserver";
@@ -63,20 +65,21 @@ export default function Skills() {
         { icon: <SiTypescript />, title: "TypeScript" },
       ]
     },
-    {
-      title: "OTHERS",
-      description: "Utilizing various tools and technologies to enhance productivity and deliver solutions.",
-      skills: [
-        { icon: <SiPython />, title: "Python" },
-        { icon: <SiFigma />, title: "Figma" },
-        { icon: <FaGitAlt />, title: "Git" },
-        { icon: <FaGithub />, title: "GitHub" },
-        { icon: <SiJira />, title: "Jira" },
-        { icon: <FaChartBar />, title: "Power BI" },
-        { icon: <FaDatabase />, title: "Data Analysis" },
-        { icon: <SiScikitlearn />, title: "Scikit-learn" },
-      ]
-    }
+{
+  title: "AI",
+  description: "Developing and deploying AI solutions using machine learning, LLMs, and cloud-based architectures.",
+  skills: [
+    { icon: <SiPython />, title: "Python" },
+    { icon: <SiScikitlearn />, title: "Machine Learning" },
+    { icon: <SiOpenai />, title: "LLMs" },
+    { icon: <FaRobot />, title: "AI Agents" },
+    { icon: <FaComments />, title: "Chatbots & Voicebots" },
+    { icon: <FaCloud />, title: "Azure AI Services" },
+    { icon: <SiDatabricks />, title: "Databricks" },
+    { icon: <FaDatabase />, title: "Data & Vector Pipelines" },
+  ]
+}
+
   ];
 
   return (
@@ -87,7 +90,7 @@ export default function Skills() {
           <div key={category.title} className="space-y-6">
             <div className="text-center md:text-left">
               <h3 className="text-lg md: textxl font-bold mb-2 text-primary">{category.title}</h3>
-              <p className="font-extralight text-base md:text-xl">{category.description}</p>
+              <p className="text-gray-400 font-extralight text-base md:text-xl">{category.description}</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {category.skills.map((skill) => (
