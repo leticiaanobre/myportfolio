@@ -6,7 +6,7 @@ export default function Experience() {
   const experiences = [
     {
       company: "Kumulus",
-      period: "2025 - Current",
+      period: "Mar 2025 - Current",
       role: "Data Scientist",
       desc: [
         "Development and support of Artificial Intelligence projects focused on business-driven solutions.",
@@ -19,7 +19,7 @@ export default function Experience() {
     },
     {
       company: "Meireles e Freitas Digital Law",
-      period: "2023 - 2025",
+      period: "Oct 2023 - Apr 2025",
       role: "Software Developer",
       desc: [
         "Developed modern and responsive interfaces using React.js, Next.js, TypeScript, and Chakra UI.",
@@ -40,7 +40,7 @@ export default function Experience() {
       id="experience"
     >
       <div className="max-w-4xl mx-auto">
-        <h2 className="font-extralight mb-12 text-lg md:text-2xl text-center md:text-left uppercase tracking-widest">
+        <h2 className="font-extralight mb-12 text-lg md:text-2xl text-center md:text-left tracking-widest">
           My <strong className="font-semibold text-white">Experience</strong>
         </h2>
 

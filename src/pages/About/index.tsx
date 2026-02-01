@@ -16,9 +16,22 @@ export default function About() {
         {/* Texto */}
         <div className="w-full md:w-2/5 flex flex-col gap-4">
           <h1 className="text-lg md:text-2xl font-bold">A BIT ABOUT ME</h1>
-          <p className="font-extralight text-base md:text-xl leading-relaxed ">
-            I am currently a Computer Science student. I work as a <strong className="text-primary font-semibold">software developer</strong> with a focus on{" "}
-            <strong className="text-primary font-semibold">web</strong> and <strong className="text-primary font-semibold">mobile development</strong>, utilizing technologies like ReactJS, Next.js, Node.js, Typescript and JavaScript. I have worked on diverse projects that span both <strong className="text-primary font-semibold">front-end and back-end development</strong>. My journey in the tech world has been driven by curiosity and a passion for building efficient and user-centered applications.
+         <p className="font-extralight text-base md:text-md leading-relaxed">
+            I am currently a Computer Science student and work as a{" "}
+            <strong className="text-primary font-semibold"> Data Scientist</strong>, 
+            with experience in{" "}
+            <strong className="text-primary font-semibold">web and mobile development </strong> 
+            as well as{" "}
+            <strong className="text-primary font-semibold">Artificial Intelligence solutions</strong>.
+          </p>
+            <p className="font-extralight text-base md:text-md leading-relaxed">
+            I have build applications using technologies such as ReactJS, Next.js, Node.js, TypeScript, and JavaScript, 
+            and collaborate on AI projects involving{" "}
+            <strong className="text-primary font-semibold">cloud services, data pipelines, and model training</strong>.
+            I have worked across{" "}
+            <strong className="text-primary font-semibold">front-end, back-end, and AI-driven systems</strong>, 
+            always focusing on performance, scalability, and user-centered design. 
+            My journey in tech is driven by curiosity and a strong interest in turning complex problems into practical, impactful solutions.
           </p>
         </div>
 

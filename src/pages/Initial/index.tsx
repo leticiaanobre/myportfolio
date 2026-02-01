@@ -30,7 +30,7 @@ export default function Home() {
                 <h1 className="text-4xl sm:text-5xl md:text-5xl font-medium text-white">
                   I&apos;m Leticia Nobre.
                   <br />
-                  A <strong className="font-bold text-gradient">Software Developer</strong>
+                  A <strong className="font-bold text-gradient">Data Scientist</strong>
                 </h1>
                 <p className="text-4xl sm:text-5xl md:text-5xl font-medium">
                   based in Brazil.
