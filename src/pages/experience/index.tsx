@@ -34,12 +34,12 @@ export default function Experience() {
   return (
     <section
       ref={ref}
-      className={`w-full min-h-screen py-20 px-6 transition-all duration-1000 ${
+      className={`w-full min-h-screen bg-radialsecondary py-20 px-6 transition-all duration-1000 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       id="experience"
     >
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto ">
         <h2 className="font-extralight mb-12 text-lg md:text-2xl text-center md:text-left tracking-widest">
           My <strong className="font-semibold text-white">Experience</strong>
         </h2>
