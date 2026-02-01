@@ -61,7 +61,7 @@ export default function Experience() {
                   <span className="text-primary font-bold text-sm block mb-1">
                     {exp.period}
                   </span>
-                  <h3 className="text-xl font-semibold group-hover:text-button-light transition-colors mb-1 text-white">
+                  <h3 className="text-xl font-semibold  mb-1 text-white">
                     {exp.role}
                   </h3>
                   <span className="text-gray-500 text-xs uppercase mb-4 block font-medium tracking-wider">
